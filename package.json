@@ -6,7 +6,7 @@
   "dependencies": {
     "dotenv": "^6.0.0",
     "request": "^2.88.0",
-    "sendbird": "^3.0.70"
+    "sendbird": "^3.0.71"
   },
   "devDependencies": {},
   "scripts": {
