@@ -88,30 +88,29 @@ var validate = async (nick, userId, url, sub) => {
   }
 }
 
-// var autoMessage = async () => {
-//   var channelListQuery = sb.GroupChannel.createMyGroupChannelListQuery();
-//   channelListQuery.includeEmpty = false;
-//   channelListQuery.limit = 20; // pagination limit could be set up to 100
-//
-//   if (channelListQuery.hasNext) {
-//     channelListQuery.next(function(channelList, error) {
-//       if (error) { console.error(error); return; }
-//       for (var i = 0; i < channelList.length; i++) {
-//         if (channelList[i].memberCount > 100) {
-//           if (channelList[i].data) {
-//             if () {
-//               channelList[i].sendUserMessage(autoMessageMessage, (message, error) => {
-//                 if (error) {
-//                   console.error(error);
-//                 }
-//               });
-//             }
-//           }
-//         }
-//       }
-//     });
-//   }
-// }
+//var autoMessage = async () => {
+//  var channelListQuery = sb.GroupChannel.createMyGroupChannelListQuery();
+//  channelListQuery.includeEmpty = false;
+//  channelListQuery.limit = 20; // pagination limit could be set up to 100
+//  if (channelListQuery.hasNext) {
+//    channelListQuery.next(function(channelList, error) {
+//      if (error) { console.error(error); return; }
+//      for (var i = 0; i < channelList.length; i++) {
+//        if (channelList[i].memberCount > 100) {
+//          if (channelList[i].data) {
+//            if (true) {
+//              channelList[i].sendUserMessage(autoMessageMessage, (message, error) => {
+//                if (error) {
+//                  console.error(error);
+//                }
+//              });
+//            }
+//          }
+//        }
+//      }
+//    });
+//  }
+//}
 
 
 sb.connect(credentials.userId, credentials.token, (bot, err) => {
@@ -142,7 +141,7 @@ sb.connect(credentials.userId, credentials.token, (bot, err) => {
       }
     });
   }
-  // autoMessage();
+  //autoMessage();
 });
 
 ch.onUserJoined = function (channel, user) {
@@ -152,10 +151,6 @@ ch.onUserJoined = function (channel, user) {
 
 sb.addChannelHandler("vsdfh64mc93mg0cn367vne4m50bn3b238", ch);
 
-// var messageInterval = setInterval(function() {
-//   autoMessage();
-// }, 1000 * 60 * 14)
-//
-// var messageInterval = setInterval(function() {
-//   autoMessage();
-// }, 1000 * 60 * 14)
+//var messageInterval = setInterval(function() {
+//  autoMessage();
+//}, 1000 * 60 * 14)

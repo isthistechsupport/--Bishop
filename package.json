@@ -4,9 +4,12 @@
   "description": "Chatbot for Reddit using Sendbird",
   "main": "app.js",
   "dependencies": {
-    "dotenv": "^6.0.0",
+    "dotenv": "^6.2.0",
+    "fs": "0.0.1-security",
+    "os": "^0.1.1",
     "request": "^2.88.0",
-    "sendbird": "^3.0.71"
+    "sendbird": "^3.0.93",
+    "websocket": "^1.0.28"
   },
   "devDependencies": {},
   "scripts": {
